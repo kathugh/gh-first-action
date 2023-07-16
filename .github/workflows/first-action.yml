@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest #environment to run on. e.g. windows, ubuntu, mac
     steps: # Steps represent a sequence of tasks that will be executed as part of the job
       - name: Print greeting 
-        run: echo "Hello world" #output a message to command line
+        run: | 
+            echo "Hello world" #output a message to command line
+            echo "Testing second output"
+            echo "Testing third output"
       - name: Print goodbye
         run: echo "done bye"
 
