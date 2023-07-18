@@ -14,5 +14,12 @@ jobs:
             echo "Testing third output"
       - name: Print goodbye
         run: echo "done bye"
+  deploy:
+    runs-on: ubuntu-latest      
+    steps: 
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
  
